@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" >
+	<meta name="KEYWords" contect="Lokya的JqueryMobile">
+    <meta name="DEscription" contect="使用JqueryMobile的相关内容写一个小demo">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/swipeslider.css">
+	<title>jqueryMobile</title>
+</head>
+<body>
+	<div data-role="page" id="page1">
+		<div data-role="header" data-position="fixed">
+			<h2>我的首页</h2>
+			<a href="#page1" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+			<div data-role="navbar">
+				<ul>
+					<li><a data-icon="home" href="#" class="ui-btn-active ui-state-persist">首页</a></li>
+					<li><a href="#page2" data-transition="slide" data-icon="grid">内容</a></li>
+					<li><a href="#page3" data-transition="slide" data-icon="gear">设置</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content" style="padding: 0px;">
+			<!-- 这是一个banner轮播插件 -->
+			<figure id="sample_slider" class="swipslider">
+				<ul class="sw-slides" style="transition-duration: 500ms; transition-timing-function: ease-out; transition-property: all;padding-left: 0px;">
+					<li class="sw-slide">
+						<img src="images/img1.jpg" alt="......" width="100%">
+					</li>
+					<li class="sw-slide">
+						<img src="images/img2.jpg" alt="......" width="100%">
+					</li>
+					<li class="sw-slide">
+						<img src="images/img3.jpg" alt="......" width="100%">
+					</li>					
+				</ul>
+			</figure> 
+			<div class="ui-grid-a">
+				<div class="ui-block-a" style="border: 1px dotted orange;">
+					<div class="laugh-title">笑话1</div>
+					<div class="laugh-con"><p>今天我走在街上，对面过来一老奶奶，当我跟她擦肩而过的时候，她一把就抓住了我的胳膊，慢慢的往下躺，我当时吓坏了。刹那间我问自己：我的银行卡里还有多少钱？够不够让老奶奶讹我一回？过了二十秒，老奶奶自个又站起来了，拍了拍身上的土说：“小伙子，够刺激吧，人生到处是惊喜！”说完就走了.</p></div>
+				</div>
+				<div class="ui-block-b" style="border: 1px dotted orange;">
+					<div class="laugh-title">笑话2</div>
+					<div class="laugh-con"><p>一男人白天工作偷偷玩手机，下班接完孩子回到家立刻又玩起微信。老婆忍无可忍终于爆发了，骂道：玩玩玩！天天玩！你什么时候才会发现，孩子不是你亲生的！男人一听大发雷霆：哼！早就怀疑很久了，你终于敢承认了哈！老婆：我怎么就不敢承认！你去客厅看看，你从幼儿园接回來的，是你儿子吗！</p></div>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" class="ui-btn">
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#alertPage" data-role="button" data-icon="plus" data-rel="dialog">分享到微博</a>
+				<a href="#alertPage" data-role="button" data-icon="plus" data-rel="dialog">分享到微信</a>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page2">
+		<div data-role="header" data-position="fixed">
+			<h2>项目内容</h2>
+			<a href="#page1" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+			<div data-role="navbar">
+				<ul>
+					<li><a data-icon="home" data-transition="slide" data-direction="reverse" href="#page1">首页</a></li>
+					<li><a href="#" data-icon="grid" class="ui-btn-active ui-state-persist">内容</a></li>
+					<li><a href="#page3" data-transition="slide" data-icon="gear">设置</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<div data-role="collapsible-set">
+				<div data-role="collapsible">
+					<h1>怎么的点我啊！</h1>
+					<p>我就知道你想点开我的！</p>
+				</div>
+				<div data-role="collapsible">
+					<h1>有本事你点我啊！</h1>
+					<p>看来你还真的有本事啊！</p>
+				</div>
+				<div data-role="collapsible">
+					<h1>瞅我咋的点我啊！</h1>
+					<p>随你瞅吧你都点开我了</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" class="ui-btn">
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#alertPage" data-role="button" data-icon="plus" data-rel="dialog">分享到微博</a>
+				<a href="#alertPage" data-role="button" data-icon="plus" data-rel="dialog">分享到微信</a>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page3">
+		<div data-role="header" data-position="fixed">
+			<h2>表单设置</h2>
+			<a href="#page1" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+			<div data-role="navbar">
+				<ul>
+					<li><a data-icon="home" data-transition="slide" data-direction="reverse" href="#page1">首页</a></li>
+					<li><a href="#page2" data-transition="slide" data-direction="reverse" data-icon="grid">内容</a></li>
+					<li><a href="#" data-icon="gear"  class="ui-btn-active ui-state-persist">设置</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<form id="form1"> 
+				<label for="fname">姓名：</label>
+				<input type="text" name="fname" placeholder="请输入您的姓名">
+				<div data-role="fieldcontain">
+					<label for="fsearch">查找：</label>
+					<input type="search" name="fsearch">
+				</div>	
+				<fieldset data-role="controlgroup">
+					<legend>性别：</legend>
+					<label for="male">男</label>
+				    <input type="radio" name="gender" id="male" value="male">
+				    <label for="female">女</label>
+				    <input type="radio" name="gender" id="female" value="female"> 
+				</fieldset>	
+				<fieldset data-role="controlgroup">
+					<legend>你喜欢的水果：</legend>
+					<label for="apple">苹果</label>
+				    <input type="checkbox" name="apple" id="apple" value="male">
+				    <label for="orange">橘子</label>
+				    <input type="checkbox" name="orange" id="orange" value="female"> 
+				    <label for="pair">梨子</label>
+				    <input type="checkbox" name="pair" id="pair" value="female"> 
+				</fieldset>	
+				<fieldset data-role="fieldcotain" >
+					<label for="address">请选择你的地址：</label>
+					<select name="day">
+						<option value="1">中国</option>
+						<option value="2">美国</option>
+						<option value="3">欧洲</option>
+					</select>
+				</fieldset>
+				<div data-role="fieldcontain">
+					<label for="score">选择您的分数：</label>
+					<input type="range" name="score" value="50" min="0" max="100">
+				</div>
+				<div data-role="fieldcontain">
+					<label for="like">喜欢动漫吗？</label>
+					<select name="like" data-role="slider">
+						<option value="on">YES</option>
+						<option value="off">NO</option>						
+					</select>
+				</div>
+			</form>
+		</div>
+		<div data-role="footer" data-position="fixed" class="ui-btn">
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#alertPage" data-role="button" data-icon="plus" data-rel="dialog">分享到微博</a>
+				<a href="#alertPage" data-role="button" data-icon="plus" data-rel="dialog">分享到微信</a>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="alertPage">
+		<div data-role="header">
+			<h2>友情提示</h2>
+		</div>
+		<div data-role="content">
+			<h2>这个功能我也不会啊T.T(宝宝心里苦！！！)</h2>
+		</div>
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/swipeslider.min.js"></script>
+<script src="js/base.js"></script>
+</html>
